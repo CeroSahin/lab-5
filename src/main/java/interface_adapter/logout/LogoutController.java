@@ -23,7 +23,7 @@ public class LogoutController {
         // Run the use case interactor for the logout use case done.
         // 1. instantiate the `LogoutInputData`, which should contain the username.
         // 2. tell the Interactor to execute.
-        final LogoutInputData logoutInputData = LogoutInputData(username);
+        final LogoutInputData logoutInputData = new LogoutInputData(username);
         logoutUseCaseInteractor.execute(logoutInputData);
     }
 }
